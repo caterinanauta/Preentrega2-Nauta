@@ -1,0 +1,333 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+/*body index*/
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px 300px 400px 100px;
+    grid-template-areas: "header     header     header    header"
+                         "hero       hero       hero      hero"
+                         "main       main       main      main"
+                         "aside      aside      aside     aside"
+                         "footer     footer     footer    footer"                   
+}
+
+@media (max-width: 576px){
+    body{
+        grid-template-rows: 200px 300px auto auto 80px;
+        grid-template-areas: "header     header     header    header"
+                             "hero       hero       hero      hero"
+                             "main       main       main      main"
+                             "aside      aside      aside     aside"
+                             "footer     footer     footer    footer"                           
+}
+}
+
+/*body guarderia*/
+  
+
+/* header */
+.header{
+    grid-area: header;
+    background-color: rgba(255, 166, 0, 0.726);
+    height: 300px;
+}
+
+.header__title{
+    font-size: 150px;
+    font-weight: 50px;
+    text-align: center; 
+    padding: 20px;
+    margin-bottom: 10px;
+    color:rgb(9, 99, 9);
+}
+
+.menuPadre {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 576px){
+.menuPadre .fa-bars{
+    display: block;
+    color: green;
+    font-size: 26px;
+}
+
+.menuPadre{
+    display: none;
+}
+
+.menuPadre .fa-bars:hover + ul{
+}
+
+}
+
+.tarjeta__menu{
+    color: rgb(9, 99, 9);
+    font-size: 25px;
+    transition: .2s;
+}
+
+.tarjeta__menu:hover{
+    transform: scale(0.5)
+
+}
+
+.navegador > ul {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    flex-flow: column wrap ;
+}
+.navegador > ul > li > a{
+    display: flex;
+    padding: 4px;
+    text-decoration: none;
+    color: green;
+    font-size:18px;
+}
+nav ul{
+    list-style-type: none;
+}
+
+.hero__text {
+    font-size: 70px;
+    font-weight: 300px;
+    color: rgb(221, 150, 18);
+    background-color: rgba(9, 99, 9, 0.87);
+    padding: 3px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.hero{
+    grid-area: hero;
+    height: 40vh;
+    background-image: url(../assets/img/kuya.jpg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+/*index: main*/
+.main{
+        grid-area: main;
+        margin-top: 100px;
+}
+.secciones{
+    min-width: 5px;
+    height: 60px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+
+.tarjetaPadre{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    
+}
+.tarjetaHijo{
+    padding: 0px;
+    margin-top: 0px;
+    width: 150px;
+    height: 200px;
+    border: 2px green solid;
+    
+}
+.tarjeta__btn{
+    display: block;
+    width: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    text-align: end;
+ }
+
+ /*sectionGuarde*/
+.sectionGuarde{
+grid-area: sectionGuarde;
+}
+ /*main: guarderia*/
+
+ .formulario{
+    background-color: orange;
+    color: green;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 60px ;
+    grid-template-areas: "titulo  titulo"
+                         "nombre      "
+                         "desde   hasta"
+                         "mail    tel  "
+                         "mensaje mensaje"
+                         "button  button"
+                        }
+
+ .formulario label:nth-child(2){
+    grid-area: nombre;
+}
+
+.formulario label:nth-child(3){
+    grid-area: mail;
+}
+
+.formulario label:nth-child(4){
+    grid-area: tel;
+}
+
+.formulario label:nth-child(5){
+    grid-area: mensaje;
+}
+
+.formulario button:nth-child(6){
+    grid-area: button;
+}
+
+.formulario label{
+    display: flex;
+    flex-direction: column;
+    padding: auto, 10px;
+}
+
+.formulario label input{
+    background-color: transparent;
+    border-bottom: 1px solid green;
+}
+ /*aside*/
+
+ .aside{
+    grid-area: aside;
+    margin-top: 200px;
+ }
+
+ .tarjetaPadreUno{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+
+ }
+
+ .tarjetaHijoUno{
+    padding: 0px;
+    width: 100px;
+    height: 100px;
+    border: 2px green solid;
+ }
+
+ .tarjetaUno__btn{
+    display: block;
+    width: 3px;
+    padding: 5px;
+    border-radius: 2px;
+    border: none;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    text-align: end;
+ }
+
+    /*shop*/
+
+ .tarjetaShop {
+    width: 250px;
+    border: solid 5px orange;
+    padding: 15px;
+ }   
+
+ .tarjeta__imagen {
+    width: 100%;
+ }
+
+ .tarjeta__titulo{
+    margin: 5px;
+    color: orange;
+ }
+
+
+/*footer*/
+.colorInvierno{
+    grid-area: footer;
+    background-color: rgb(221, 150, 18);
+}
+
+ 
+.footerUno{
+    display: flex;
+    flex-flow: column wrap ;
+    align-content: flex-end;
+}
+
+.footerUno__titulo{
+
+}
+
+.footerDos{
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.footerBtn ::before{
+    content: "";
+    background-color: transparent;
+    border: none;
+    padding: 12px 18px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.footerBtn > i {
+    margin-left: 10px;
+}
+
+.footerBtn::before {
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    color: green;
+    position: absolute;
+    z-index: -1;
+    left: 83px;
+    transform: translate(0px, -50px);
+    top: 50% ;
+    transition: width 0.25s left 0.25s 0.25s;
+}
+
+.footerBtn :hover::before{
+    left: 0;
+    width: 100%;
+    transition: left 0.25s , width 0.25s 0.25s;
+
+
+}
+
+
+.footerDos__titulo{
+   font-weight: 0,5px;
+   font-size: 13px;
+   
+}
+
+
+
+
+
+
+
+
