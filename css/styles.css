@@ -44,18 +44,22 @@ body{
     padding: 20px;
     margin-bottom: 10px;
     color:rgb(9, 99, 9);
+    font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
 }
 
 .menuPadre {
+    font-family: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
+    position:relative;
+    top: 40px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 @media (max-width: 576px){
 .menuPadre .fa-bars{
     display: block;
-    color: green;
+    color: rgb(9, 99, 9);
     font-size: 26px;
 }
 
@@ -65,7 +69,6 @@ body{
 
 .menuPadre .fa-bars:hover + ul{
 }
-
 }
 
 .tarjeta__menu{
@@ -83,13 +86,14 @@ body{
     position: absolute;
     top: 50px;
     right: 50px;
+    font-family: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
     flex-flow: column wrap ;
 }
 .navegador > ul > li > a{
     display: flex;
     padding: 4px;
     text-decoration: none;
-    color: green;
+    color: rgb(9, 99, 9);
     font-size:18px;
 }
 nav ul{
@@ -108,7 +112,8 @@ nav ul{
 
 .hero{
     grid-area: hero;
-    height: 40vh;
+    height: 53vh;
+    font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
     background-image: url(../assets/img/kuya.jpg);
 
     display: flex;
@@ -116,6 +121,8 @@ nav ul{
     align-items: center;
     background-attachment: fixed;
 }
+
+
 /*index: main*/
 .main{
         grid-area: main;
@@ -125,10 +132,6 @@ nav ul{
     min-width: 5px;
     height: 60px;
     
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     }
 
 .tarjetaPadre{
