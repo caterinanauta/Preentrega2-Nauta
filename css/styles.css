@@ -5,27 +5,7 @@
 }
 
 /*body index*/
-body{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 300px 300px 400px 100px;
-    grid-template-areas: "header     header     header    header"
-                         "hero       hero       hero      hero"
-                         "main       main       main      main"
-                         "aside      aside      aside     aside"
-                         "footer     footer     footer    footer"                   
-}
 
-@media (max-width: 576px){
-    body{
-        grid-template-rows: 200px 300px auto auto 80px;
-        grid-template-areas: "header     header     header    header"
-                             "hero       hero       hero      hero"
-                             "main       main       main      main"
-                             "aside      aside      aside     aside"
-                             "footer     footer     footer    footer"                           
-}
-}
 
 /*body guarderia*/
   
@@ -36,7 +16,6 @@ body{
     background-color: rgba(255, 166, 0, 0.726);
     height: 300px;
 }
-
 .header__title{
     font-size: 150px;
     font-weight: 50px;
@@ -46,7 +25,6 @@ body{
     color:rgb(9, 99, 9);
     font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
 }
-
 .menuPadre {
     font-family: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
     position:relative;
@@ -55,6 +33,8 @@ body{
     flex-flow: row wrap;
     justify-content: space-around;
 }
+
+
 
 @media (max-width: 576px){
 .menuPadre .fa-bars{
@@ -82,6 +62,7 @@ body{
 
 }
 
+
 .navegador > ul {
     position: absolute;
     top: 50px;
@@ -99,7 +80,6 @@ body{
 nav ul{
     list-style-type: none;
 }
-
 .hero__text {
     font-size: 70px;
     font-weight: 300px;
@@ -109,7 +89,6 @@ nav ul{
     border-radius: 20px;
     text-align: center;
 }
-
 .hero{
     grid-area: hero;
     height: 53vh;
@@ -122,32 +101,70 @@ nav ul{
     background-attachment: fixed;
 }
 
-
 /*index: main*/
 .main{
         grid-area: main;
-        margin-top: 100px;
+
 }
 .secciones{
     min-width: 5px;
-    height: 60px;
-    
+    height: 80%;
     }
 
 .tarjetaPadre{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    
+    height: 50%;
+}
+
+.tarjetaPadreBis{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly; 
+    gap: 0px;
+    height: 50%;
 }
 .tarjetaHijo{
-    padding: 0px;
-    margin-top: 0px;
-    width: 150px;
-    height: 200px;
-    border: 2px green solid;
-    
+     width: 50%;
+     height: 100%;
 }
+
+.tarjetaHijoBis{
+    width: 33.3%;
+    height: 100%;
+}
+
+.tarjetaPaisajismo{
+    background-image: url(../assets/img/paisajismo.jpeg);
+}
+
+.tarjetaShopUno{
+    background-image: url(../assets/img/shop.jpeg);
+}
+
+.tarjetaGuarderiaUno{
+    background-image: url(../assets/img/guarderia.jpeg);
+}
+
+.tarjetaAsesoramiento{
+    background-image: url(../assets/img/asesoramiento.jpeg);
+}
+
+.tarjetaPlaylist{
+    background-image: url(../assets/img/floraymusica.jpeg);
+}
+
+.secciones__titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    font-family: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
+    font-size: 20px;
+    color:rgba(255, 166, 0, 0.726);
+
+}
+
 .tarjeta__btn{
     display: block;
     width: 10px;
@@ -159,27 +176,77 @@ nav ul{
     text-decoration: none;
     text-align: end;
  }
+ .tarjetaPadreUno{
+    grid-area: aside;
+    margin-top: 200px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+ }
+ .tarjetaHijoUno{
+    padding: 0px;
+    width: 100px;
+    height: 100px;
+    border: 2px green solid;
+ }
+ .tarjetaUno__btn{
+    display: block;
+    width: 3px;
+    padding: 5px;
+    border-radius: 2px;
+    border: none;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    text-align: end;
+ }
+
+
 
  /*sectionGuarde*/
 .sectionGuarde{
 grid-area: sectionGuarde;
 }
+
  /*main: guarderia*/
 
  .formulario{
     background-color: orange;
     color: green;
-    display: grid;
+    
+    max-width: 800px;
+    margin: auto;
+    border-radius: 100px;
+    padding: 30px;
+    margin-bottom: 10px;
     gap: 10px;
+    display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 60px ;
     grid-template-areas: "titulo  titulo"
-                         "nombre      "
+                         "nombre  nombre   "
                          "desde   hasta"
                          "mail    tel  "
                          "mensaje mensaje"
                          "button  button"
                         }
+
+    @media (max-width: 800px) { 
+    .formulario{
+        width: 100px;
+        margin: 20px 0px;
+        border-radius: 0px;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 60px ;
+        grid-template-areas: "titulo  titulo"
+                             "nombre      "
+                             "desde   hasta"
+                             "mail    tel  "
+                             "mensaje mensaje"
+                             "button  button"
+
+    }   
+}            
 
  .formulario label:nth-child(2){
     grid-area: nombre;
@@ -199,30 +266,35 @@ grid-area: sectionGuarde;
 
 .formulario button:nth-child(6){
     grid-area: button;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    color: orange;
+    margin-top: 20px;
 }
 
 .formulario label{
     display: flex;
     flex-direction: column;
-    padding: auto, 10px;
 }
 
-.formulario label input{
+.formulario label input , .formulario label textarea{
     background-color: transparent;
+    border: 0;
     border-bottom: 1px solid green;
+    margin-top: 10px;
+    outline: none;
+    color: green;
 }
- /*aside*/
-
- .aside{
-    grid-area: aside;
-    margin-top: 200px;
- }
 
  .tarjetaPadreUno{
+    grid-area: aside;
+    margin-top: 200px;
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
-
+    height: 20px;
  }
 
  .tarjetaHijoUno{
@@ -231,6 +303,7 @@ grid-area: sectionGuarde;
     height: 100px;
     border: 2px green solid;
  }
+
 
  .tarjetaUno__btn{
     display: block;
@@ -244,47 +317,30 @@ grid-area: sectionGuarde;
     text-align: end;
  }
 
-    /*shop*/
-
- .tarjetaShop {
-    width: 250px;
-    border: solid 5px orange;
-    padding: 15px;
- }   
-
- .tarjeta__imagen {
-    width: 100%;
- }
-
- .tarjeta__titulo{
-    margin: 5px;
-    color: orange;
- }
-
 
 /*footer*/
+
+/*como achicar el footer? y por que no me queda abajo de todod*/
 .colorInvierno{
     grid-area: footer;
     background-color: rgb(221, 150, 18);
-}
-
- 
+} 
 .footerUno{
     display: flex;
     flex-flow: column wrap ;
     align-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+    margin-right: 30px;
 }
-
 .footerUno__titulo{
-
+    color: rgba(9, 99, 9, 0.87);
 }
-
 .footerDos{
     display: flex;
     margin-left: 30px;
     margin-bottom: 30px;
 }
-
 .footerBtn ::before{
     content: "";
     background-color: transparent;
@@ -296,7 +352,7 @@ grid-area: sectionGuarde;
 }
 
 .footerBtn > i {
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .footerBtn::before {
@@ -324,7 +380,44 @@ grid-area: sectionGuarde;
 .footerDos__titulo{
    font-weight: 0,5px;
    font-size: 13px;
-   
+   font-style: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+}
+
+/*shop*/
+
+.bg-dark{
+   background-color: rgba(255, 166, 0, 0.726) !important;
+}
+
+.nav-link:hover{
+    color: green;
+}
+
+.navbar-brand{
+    color: rgb(9, 99, 9);
+    font-size: 80px;
+    font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;;
+}
+
+.nav-link{
+    font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;;;
+    font-size: 25px;
+}
+
+.navbar{
+    padding: 40px;
+}
+
+.cajaShop{
+    width: 600px;
+    height: 500;
+    border: orange solid 1px;
+}
+
+.formularioPaisajismo{
+    width: 1000px;
+    margin:auto; 
+    background-color: orange;
 }
 
 

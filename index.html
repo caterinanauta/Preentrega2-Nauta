@@ -13,7 +13,7 @@
 <body> 
 
     <header class="header">
-
+<!-- tuve problemas con los media por eso los borre, me compplicaban otras secciones de la web-->
         <h1 class="header__title">YuKa</h1>
 
         <section class="menuPadre">
@@ -56,84 +56,82 @@
     <main class="main">
 
         <section class="secciones">
-
+            <!-- quiero agrandar los divs pero le quitan espacio a los divs de abajo que aun no fueron editados -->
             <div class="tarjetaPadre">
 
-                <article class="tarjetaHijo tarjetaShopUno">
-                    <h3 class="shop__titulo">  mercadito de plantas  </h3>
+                <div class="tarjetaHijo tarjetaShopUno">
+                    <h3 class="secciones__titulo">  MERCADITO DE PLANTAS </h3>
                     <a href="shop.html" class="tarjeta__btn">+</a>
-                </article>
+                </div>
 
-                <article class="tarjetaHijo tarjetaGuarderia">
-                    <h3 class="guarderia__titulo"> guarderia </h3>
+                <article class="tarjetaHijo tarjetaGuarderiaUno">
+                    <h3 class="secciones__titulo"> GUARDERIA </h3>
                     <a href="guarderia.html" class="tarjeta__btn">+</a>
                 </article>
 
-                <article class="tarjetaHijo tarjetaPaisajismo">
-                    <h3 class="paisajismo__titulo"> paisajismo </h3>
+            </div>    
+            <div class="tarjetaPadreBis">
+                <article class="tarjetaHijoBis tarjetaPaisajismo">
+                    <h3 class="secciones__titulo">PAISAJISMO</h3>
                     <a href="" class="tarjeta__btn">+</a>
                 </article>
 
-                <article class="tarjetaHijo tarjetaAsesoramiento">
-                    <h3 class="asesoramiento__titulo"> asesoramiento </h3>
+                <article class="tarjetaHijoBis tarjetaAsesoramiento">
+                    <h3 class="secciones__titulo">ASESORAMIENTO </h3>
                     <a href="asesoramiento.html" class="tarjeta__btn">+</a>
                 </article>
 
-                <article class="tarjetaHijo tarjetaPlaylist">
-                    <h3 class="playlist__titulo"> flora y musica </h3>
+                <article class="tarjetaHijoBis tarjetaPlaylist">
+                    <h3 class="secciones__titulo"> FLORA Y MUSICA</h3>
                     <a href="playlist.html" class="tarjeta__btn">+</a>
                 </article>
 
             </div>
         </section>
-    </main>
 
-    <section class="aside">
-            <!-- aca sucedio lo miso no puedo agregar css ya que los class que 
-            les asigne no me los toma para ser editados con css -->
+        <div class="tarjetaPadreUno">
 
-            <div class="tarjetaPadreUno">
+            <article class="tarjetaHijoUno">
+                <h3 class="OfertaUno">  oferta de temporada </h3>
+                <a href="shop.html" class="tarjetaUno__btn">+</a>
+            </article>
 
-                <article class="tarjetaHijoUno">
-                    <h3 class="OfertaUno">  oferta de temporada </h3>
-                    <a href="shop.html" class="tarjetaUno__btn">+</a>
-                </article>
+            <article class="tarjetaHijoUno">
+                <h3 class="OfertaDos"> oferta de temporada</h3>
+                <a href="shop.html" class="tarjetaUno__btn">+</a>
+            </article>
 
-                <article class="tarjetaHijoUno">
-                    <h3 class="OfertaDos"> oferta de temporada</h3>
-                    <a href="shop.html" class="tarjetaUno__btn">+</a>
-                </article>
+            <article class="tarjetaHijoUno">
+                <h3 class="OfertaTres"> oferta de temporada </h3>
+                <a href="shop.html" class="tarjetaUno__btn">+</a>
+            </article>
 
-                <article class="tarjetaHijoUno">
-                    <h3 class="OfertaTres"> oferta de temporada </h3>
-                    <a href="shop.html" class="tarjetaUno__btn">+</a>
-                </article>
+            <article class="tarjetaHijoUno">
+                <h3 class="OfertaTres"> oferta de temporada </h3>
+                <a href="shop.html" class="tarjetaUno__btn">+</a>
+            </article>
 
-                <article class="tarjetaHijoUno">
-                    <h3 class="OfertaTres"> oferta de temporada </h3>
-                    <a href="shop.html" class="tarjetaUno__btn">+</a>
-                </article>
+        </div>
+    </main>   
 
-            </div>
-            
-    </section>
-    
+ 
  <footer class="colorInvierno">
-
-    <nav class="footerUno">
-        <!-- quiero agregarles el icono de cada red social y linkearlo a las mismas -->
+    <div class="footerUno">
+        <!-- quiero linkear con las redes -->
         <h3 class="footerUno__titulo">REDES SOCIALES</h3>
-        <ul class="footerUno__lista">
-            <li>instagram</li>
-            <li>tik-tok</li>
-        </ul>
-    </nav>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+    </div>
+<!--tuve problema para realizar la animacion -->
+    <button class="footerBtn">
+        <div class="circulo">
+        </div> ver redes <i class="fa-thin fa-arrow-right"></i>
+    </button>
 
-    <button class="footerBtn"><div class="circulo"></div> ver redes <i class="fa-thin fa-arrow-right"></i></button>
-
-    <nav class="footerDos">
+    <div class="footerDos">
         <h4 class="footerDos__titulo">2022 YuKa - todos los derechos reservados</h4>
-    </nav>
+    </div>
  </footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
