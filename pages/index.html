@@ -4,21 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yuka es una marca argentina que se especializa en asesorar a sus clientes a la hora de comprar, tener o regalar una planta. Tambien hacemos proyectos de paisajismo y cuidamos tus plantas cuando estas de vacaciones">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <title>Document</title>
+    <title>YuKa</title>
 </head>
 
-<body> 
+<body class="body"> 
     <nav class="navegadorPadre">
         <h1 class="nav__title">YuKa</h1>
-
-        <nav class="menuPadre">
-            <label class="labelMenuPadre" for="labelMenuPadre">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-            <input class="inputMenuPadre" type="checkbox" id="labelManuPadre">
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><i class="fa-solid fa-bars"></i></label>
+        <div class="menuPadre">
             <div class="menuHijo">
                 <a href="index.html" class="tarjeta__menu">Inicio</a>
                 <a href="shop.html" class="tarjeta__menu"> Mercadito de plantas </a>
@@ -27,7 +25,7 @@
                 <a href="paisajismo.html" class="tarjeta__menu"> Paisajismo </a>
                 <a href="playlist.html" class="tarjeta__menu"> Flora y musica </a>
             </div>    
-        </nav>
+        </div>
 
         <nav class="navegador">
             <ul>
@@ -40,66 +38,79 @@
 
 
     <header class="hero"> 
-        <div class="hero__text">un camino hacia adentro de la selva</div>
+        <div class="hero__text animate__backInLeft">un camino hacia adentro de la selva</div>
     </header>
 
     <main class="main">
 
-        <section class="secciones">
-            <!-- quiero agrandar los divs pero le quitan espacio a los divs de abajo que aun no fueron editados -->
+        <div class="secciones">
             <div class="tarjetaPadre">
 
                 <div class="tarjetaHijo tarjetaShopUno">
-                    <h3 class="secciones__titulo">  MERCADITO DE PLANTAS </h3>
-                    <a href="shop.html" class="tarjeta__btn">+</a>
+                   <div class="seccionBoton"><a href="shop.html" class="seccionesBoton">MERCADITO DE PLANTAS</a></div>
                 </div>
 
-                <article class="tarjetaHijo tarjetaGuarderiaUno">
-                    <h3 class="secciones__titulo"> GUARDERIA </h3>
-                    <a href="guarderia.html" class="tarjeta__btn">+</a>
-                </article>
+                <div class="tarjetaHijo tarjetaGuarderiaUno">
+                    <div class="seccionBoton"><a href="guarderia.html" class="seccionesBoton">GUARDERIA</a></div>
+                </div>
 
             </div>    
             <div class="tarjetaPadreBis">
-                <article class="tarjetaHijoBis tarjetaPaisajismo">
-                    <h3 class="secciones__titulo">PAISAJISMO</h3>
-                    <a href="" class="tarjeta__btn">+</a>
-                </article>
+                <div class="tarjetaHijoBis tarjetaPaisajismo">
+                    <div class="seccionBoton"><a href="paisajismo.html" class="seccionesBoton">PAISAJISMO</a></div>
+                </div>
 
-                <article class="tarjetaHijoBis tarjetaAsesoramiento">
-                    <h3 class="secciones__titulo">ASESORAMIENTO </h3>
-                    <a href="asesoramiento.html" class="tarjeta__btn">+</a>
-                </article>
+                <div class="tarjetaHijoBis tarjetaAsesoramiento">
+                    <div class="seccionBoton"><a href="asesoramiento.html" class="seccionesBoton">ASESORAMIENTO</a></div>
+                </div>
 
-                <article class="tarjetaHijoBis tarjetaPlaylist">
-                    <h3 class="secciones__titulo"> FLORA Y MUSICA</h3>
-                    <a href="playlist.html" class="tarjeta__btn">+</a>
-                </article>
+                <div class="tarjetaHijoBis tarjetaPlaylist">
+                    <div class="seccionBoton"><a href="playlist.html" class="seccionesBoton">PLAYLIST</a></div>
+                </div>
 
             </div>
-        </section>
+        </div>
 
         <div class="tarjetaPadreUno">
+            <div class="tarjetaHijo__Uno tarjetaOreja">
+                <a href="shop.html" class="tarjetaUno__btn">
+                    <img src="../assets/img/calathea.jpg"> 
+                    <div class="divOfertas">
+                    <h3 class="OfertaUno">  OFERTA DE TEMPORADA </h3> 
+                    <h3 class="OfertaDos">  CALATHEA</h3>
+                    </div>
+                </a>
+            </div>
 
-            <article class="tarjetaHijoUno">
-                <h3 class="OfertaUno">  oferta de temporada </h3>
-                <a href="shop.html" class="tarjetaUno__btn">+</a>
-            </article>
+                <div class="tarjetaHijo__Uno tarjetaFicusPandurata">
+                    <a href="shop.html" class="tarjetaUno__btn">
+                        <img src="../assets/img/ficusPandurata.jpg"> 
+                        <div class="divOfertas">
+                        <h3 class="OfertaUno">  OFERTA DE TEMPORADA </h3> 
+                        <h3 class="OfertaDos">  FICUS PANDURATA </h3>
+                        </div>
+                    </a>
+                </div>            
 
-            <article class="tarjetaHijoUno">
-                <h3 class="OfertaDos"> oferta de temporada</h3>
-                <a href="shop.html" class="tarjetaUno__btn">+</a>
-            </article>
-
-            <article class="tarjetaHijoUno">
-                <h3 class="OfertaTres"> oferta de temporada </h3>
-                <a href="shop.html" class="tarjetaUno__btn">+</a>
-            </article>
-
-            <article class="tarjetaHijoUno">
-                <h3 class="OfertaTres"> oferta de temporada </h3>
-                <a href="shop.html" class="tarjetaUno__btn">+</a>
-            </article>
+                <div class="tarjetaHijo__Uno tarjetaAlocasia">
+                    <a href="shop.html" class="tarjetaUno__btn">
+                        <img src="../assets/img/alocasiaAmazonica.jpg"> 
+                        <div class="divOfertas">
+                        <h3 class="OfertaUno">  OFERTA DE TEMPORADA </h3>
+                        <h3 class="OfertaDos">  ALOCASIA AMAZONICA </h3>
+                        </div> 
+                    </a>
+                </div> 
+                
+                <div class="tarjetaHijo__Uno tarjetaSansiviera">
+                    <a href="shop.html" class="tarjetaUno__btn">
+                        <img src="../assets/img/tarjetaSansiviera.jpg">
+                        <div class="divOfertas"> 
+                        <h3 class="OfertaUno">  OFERTA DE TEMPORADA </h3> 
+                        <h3 class="OfertaDos">  SANSIVIERA </h3>
+                        </div>
+                    </a>
+                </div> 
 
         </div>
     </main>   
@@ -107,16 +118,12 @@
  
  <footer class="colorInvierno">
     <div class="footerUno">
-        <!-- quiero linkear con las redes -->
-        <h3 class="footerUno__titulo">REDES SOCIALES</h3>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-tiktok"></i>
+        <div><h3 class="footerUno__titulo">REDES SOCIALES</h3></div>
+        <div class="footer__uno">
+            <i class="fa-brands fa-instagram" href="https://instagram.com/selvamonstera?igshid=NDk5N2NlZjQ="></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
     </div>
-<!--tuve problema para realizar la animacion -->
-    <button class="footerBtn">
-        <div class="circulo">
-        </div> ver redes <i class="fa-thin fa-arrow-right"></i>
-    </button>
 
     <div class="footerDos">
         <h4 class="footerDos__titulo">2022 YuKa - todos los derechos reservados</h4>
