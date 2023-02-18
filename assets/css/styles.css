@@ -162,6 +162,49 @@ background-color: rgba(9, 99, 9, 0.87);
 transform: scale(0.85);
 }
 
+.tarjetaPadreUno{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ .titulo__ofertas{
+    font-size: 30px;
+    font-weight: 10px;
+    color: rgb(221, 150, 18);
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.tarjetaUno__btn{
+    text-decoration: none;
+    outline: none;
+    color: orange;
+}
+
+.tarjetaHijo__Uno{
+    position: relative;
+    bottom: 150px;
+    width: 250px;
+    height: 400px;
+ }
+
+.divOfertas{
+    display: flex;
+    align-items: center;
+    
+} 
+
+.ofertaUno{
+    font-family: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
+    color: rgb(221, 150, 18);
+}
+
+.OfertaDos{
+    font-family: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
+    color: rgba(9, 99, 9, 0.87);
+}
+
 
 
 
@@ -274,6 +317,7 @@ transform: scale(0.85);
         display:flex;
         position: absolute;
         left: 2px;}
+
     .navegadorPadre{
          width: 180px;}
 
@@ -309,51 +353,22 @@ transform: scale(0.85);
         font-size:16px;
         padding: 2px;
     }
-}
 
-
-.tarjetaPadreUno{
-    margin-top: 200px;
-    display: flex;
-    justify-content: space-evenly;
- }
-
- .titulo__ofertas{
-    font-size: 30px;
-    font-weight: 10px;
-    color: rgb(221, 150, 18);
-    display: flex;
-    justify-content:space-evenly;
-}
-
-.tarjetaUno__btn{
-    text-decoration: none;
-    outline: none;
-    color: orange;
-}
-
-.tarjetaHijo__Uno{
-    position: relative;
-    bottom: 150px;
-    width: 250px;
-    height: 400px;
- }
-
-.divOfertas{
-    display: flex;
-    align-items: center;
+@media screen and (max-width: 1058px) {
     
-} 
-
-.ofertaUno{
-    font-family: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
-    color: rgb(221, 150, 18);
+    .tarjetaPadreUno{
+        display: flex;
+        flex-flow: column;
+     }
+    
+     .titulo__ofertas{
+        font-size: 20px;
+        font-weight: 15px;
+    }      
+}
 }
 
-.OfertaDos{
-    font-family: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
-    color: rgba(9, 99, 9, 0.87);
-}
+
 
 /*footer*/
 .colorInvierno{
